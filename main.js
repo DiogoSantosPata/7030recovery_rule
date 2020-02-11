@@ -1,8 +1,9 @@
 
 
+
 // Baseline = randi(66,1,80);
 var sample_n = 80;
-var Baseline_tmp = Array.from({length: sample_n}, () => Math.floor(Math.random() * sample_n));
+var Baseline_tmp = Array.from({length: sample_n}, () => Math.floor(Math.random() * 60));
 
 // Baseline(Baseline<20)=[];
 var Baseline = [];
@@ -113,3 +114,4 @@ google.charts.load('current', {'packages':['corechart']});
 // hold on; plot((66-Baseline(find(NonRecoverers))), (Recovery(find(NonRecoverers))), 'or')
 //
 // text(10,30,num2str(slope))
+
