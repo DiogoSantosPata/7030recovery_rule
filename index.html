@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>70 30 rule</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
   <script src="main.js"></script>
 </head>
 
 <body>
 
-<h1>70rule</h1>
+<div class="jumbotron text-center">
+  <h3>70-30 Recovery Rule</h3>
+</div>
 
-<div id="chart_div" style="width: 900px; height: 500px;"></div>
-
-
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 centered">
+      <h4>Random seed generation</h4>
+      <p>Generating random data-points</p>
+      <div id="chart_div_random" style="width: 400px; height: 400px;"></div>
+    </div>
+    <div class="col-sm-6 centered">
+      <h4>Resulting recovery correlation</h4>
+      <p>Compute recovery using randomly generate data</p>
+      <div id="chart_div" style="width: 400px; height: 400px;"></div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
