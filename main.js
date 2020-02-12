@@ -1,6 +1,5 @@
 
 
-
 // Baseline = randi(66,1,80);
 var sample_n = 80;
 var range = 66;
@@ -91,9 +90,9 @@ function drawChart() {
   // Random data
   var data = google.visualization.arrayToDataTable(data_tmp_nr);
   var options = {
-    title: 'Baseline vs. Recovery',
+    title: 'Baseline (random) vs. Recovery seed (random)',
     hAxis: {title: 'Baseline'},
-    vAxis: {title: 'Recovery_seed'},
+    vAxis: {title: 'Recovery seed'},
     legend: 'none'
   };
 
@@ -133,5 +132,3 @@ function drawChart() {
 // hold on; plot((66-Baseline(find(NonRecoverers))), (Recovery(find(NonRecoverers))), 'or')
 //
 // text(10,30,num2str(slope))
-
-
