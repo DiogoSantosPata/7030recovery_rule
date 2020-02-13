@@ -12,11 +12,6 @@ for (i = 0; i < Baseline_tmp.length; i++) {
 }
 
 
-
-// for jj=1:length(Baseline)
-//     Recovery(jj) = randi(67-Baseline(jj))
-// end
-
 var Recovery_seeds = [];
 var Recovery = [];
 for (i = 0; i < Baseline.length; i++) {
@@ -46,17 +41,6 @@ for (i = 0; i < Baseline.length; i++) {
 
 }
 
-
-
-//
-// %Plotting part with fit
-//
-// figure;
-//
-// x=(66-Baseline(find(NonRecoverers==0)));
-//
-// y1= (Recovery(find(NonRecoverers==0)));
-//
 
 
 data_tmp = [];
@@ -106,7 +90,7 @@ function drawChart() {
   var options = {
     title: 'Baseline vs. Recovery',
     hAxis: {title: 'Baseline', minValue: 0, maxValue: 65 } ,
-    vAxis: {title: 'Recovery', minValue: -10, maxValue: 45},
+    vAxis: {title: 'Computed Recovery', minValue: -10, maxValue: 45},
     legend: 'none',
   };
 
@@ -114,21 +98,3 @@ function drawChart() {
   chart.draw(data, options);
 }
 
-
-// scatter(x,y1,'b','*')
-//
-// P = polyfit(x,y1,1);
-//
-// slope = P(1)
-//
-// intercept = P(2)
-//
-// yfit = P(1)*x+P(2);  % P(1) is the slope and P(2) is the intercept
-//
-// hold on;
-//
-// plot(x,yfit,'r-.')
-//
-// hold on; plot((66-Baseline(find(NonRecoverers))), (Recovery(find(NonRecoverers))), 'or')
-//
-// text(10,30,num2str(slope))
