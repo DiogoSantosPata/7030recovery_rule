@@ -113,7 +113,7 @@ function drawChart() {
   var options = {
     title: 'Baseline vs. Recovery',
     hAxis: {title: 'Baseline', minValue: 0, maxValue: 65 } ,
-    vAxis: {title: 'Recovery', minValue: -10, maxValue: 45},
+    vAxis: {title: 'Computed Recovery', minValue: -10, maxValue: 45},
     legend: 'none',
   };
 
