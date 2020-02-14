@@ -13,7 +13,7 @@ var data_tmp_nr = [];
 
 function generate_data_compute_recovery(){
 
-  Baseline_tmp;
+  Baseline_tmp = [];
   Baseline = [];
   Recovery_seeds = [];
   Recovery = [];
@@ -67,13 +67,9 @@ function generate_data_compute_recovery(){
 
 
   data_tmp.push( ['Baseline','Recovery'] );
-  x = [];
-  y = [];
   for (i = 0; i < Baseline.length; i++) {
     if( NonRecoverers[i] == 0 ){
-      data_tmp.push( [66-Baseline[i],Recovery[i]] );
-      x.push(66-Baseline[i]);
-      y.push(Recovery[i]);
+      data_tmp.push( [Baseline[i],Recovery[i]] );
     }
   }
 
